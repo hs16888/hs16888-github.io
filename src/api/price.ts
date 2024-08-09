@@ -6,7 +6,7 @@ import axios from "axios";
 
 
 async function fetchPriceFromApi(params: SearchPriceParams) {
-    const response = await axios.get<ApiResponse<PriceData>>("https://script.google.com/macros/s/AKfycbx5D5ac79GlNQIESZ9ogcZQVBzcGNOWMF8A3DmooVHEmlvRJqj3sJAqt-G8SECd0IDY/exec", {
+    const response = await axios.get<ApiResponse<PriceData>>("https://script.google.com/macros/s/AKfycbwdbosGhHfC-O5lUgYPntMFjUejBtMhyOl__lEF98HkCkM-aaaugfBrNAaPGmsZFp0FyQ/exec", {
         params: {
             ...params,
             action: "search"
