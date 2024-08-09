@@ -4,7 +4,7 @@ import { ApiResponse, Limitation, Metadata } from "../types.ts";
 import { set } from "lodash-es";
 
 async function getMetadata() {
-    const response = await axios.get<ApiResponse<Metadata>>("https://script.google.com/macros/s/AKfycbx5D5ac79GlNQIESZ9ogcZQVBzcGNOWMF8A3DmooVHEmlvRJqj3sJAqt-G8SECd0IDY/exec", {
+    const response = await axios.get<ApiResponse<Metadata>>("https://script.google.com/macros/s/AKfycbwdbosGhHfC-O5lUgYPntMFjUejBtMhyOl__lEF98HkCkM-aaaugfBrNAaPGmsZFp0FyQ/exec", {
         params: { action: "metadata" }
     });
     const data = response.data;
